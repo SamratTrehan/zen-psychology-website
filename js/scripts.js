@@ -1,4 +1,3 @@
-
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -16,3 +15,8 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
   alert('Thank you! Your message has been sent.');
   this.reset();
 });
+
+function toggleMenu() {
+  const menu = document.querySelector('.hamburger-menu');
+  menu.classList.toggle('show');
+}
