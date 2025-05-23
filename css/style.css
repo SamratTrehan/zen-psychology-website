@@ -102,7 +102,6 @@ footer {
   padding: 2rem;
   font-size: 0.9rem;
 }
-
 .card {
   opacity: 0;
   transform: translateY(50px);
@@ -111,4 +110,41 @@ footer {
 .card.visible {
   opacity: 1;
   transform: translateY(0);
+}
+.shorts-gallery {
+  padding: 4rem 2rem;
+  text-align: center;
+  max-width: none;
+}
+.social-links {
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+.social-links a {
+  color: #6b4ca5;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 0.5rem;
+}
+.shorts-track {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding: 1rem 0;
+}
+.shorts-wrapper {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+.shorts-wrapper iframe {
+  flex: 1 1 calc(20% - 1rem); 
+  aspect-ratio: 9 / 16;       
+  border: none;
+  border-radius: 12px;
+  min-width: 150px;
+  max-width: 220px;
+  height: auto;
 }
