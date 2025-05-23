@@ -55,6 +55,7 @@ nav {
   width: 100%;
   top: 0;
   z-index: 1000;
+  transition: top 0.3s ease;
 }
 
 nav ul {
